@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_phone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    tools:context="com.example.android.joyin.Activity.RegisterPhoneActivity">
+
+    <ImageView
+        android:id="@+id/register_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/joyin" />
+
+    <EditText
+        android:id="@+id/register_tele"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#F0F0F0"
+        android:gravity="center"
+        android:hint="请输入账号（即手机号）" />
+
+
+    <EditText
+        android:id="@+id/register_ma"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_tele"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="20dp"
+        android:background="#F0F0F0"
+        android:gravity="center"
+        android:hint="请输入验证码" />
+
+    <Button
+        android:id="@+id/register_get"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/register_tele"
+        android:layout_marginLeft="222dp"
+        android:layout_marginTop="15dp"
+        android:text="获取验证码"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/register_verify"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_get"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="验证"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/register_phone_password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_verify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#F0F0F0"
+        android:gravity="center"
+        android:hint="请输入密码"
+        android:textColor="#6C6C6C" />
+
+    <EditText
+        android:id="@+id/register_phone_password_twice"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_phone_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#F0F0F0"
+        android:gravity="center"
+        android:hint="请再次输入密码"
+        android:textColor="#6C6C6C" />
+
+    <Button
+        android:id="@+id/register_sign"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_phone_password_twice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="注册"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_peraddress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.joyin.Persetting.PersonSettingsAddressActivity">
+    <EditText
+        android:id="@+id/changed_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="天津市津南区海河教育园区同砚路38号南开大学理科组团"
+        android:textColor="#000000"
+        android:maxLines="6"/>
+
+    <Button
+        android:id="@+id/save_address_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changed_address"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="16dp"
+        android:onClick="saveAddressChange"
+        android:text="保存"
+        android:textSize="15sp" />
+</RelativeLayout>

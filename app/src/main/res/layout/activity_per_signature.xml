@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_per_signature"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.joyin.Persetting.PersonSettingsSignatureActivity">
+    <EditText
+        android:id="@+id/changed_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:cursorVisible="true"
+        android:maxLines="6"
+        android:textSize="15sp"
+        android:text="庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣~"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/save_signature_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changed_signature"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="16dp"
+        android:onClick="saveSignatureChange"
+        android:text="保存"
+        android:textSize="15sp" />
+</RelativeLayout>

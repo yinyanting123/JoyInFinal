@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Classify">
+        <item>篮球</item>
+        <item>足球 </item>
+        <item>乒乓球</item>
+        <item>会议</item>
+        <item>音乐</item>
+        <item>长跑</item>
+        <item>其它</item>
+    </string-array>
+</resources>

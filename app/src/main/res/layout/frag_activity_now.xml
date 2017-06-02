@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.joyin.fragment.ActivityNow">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MessageShow"
+        android:layout_centerHorizontal="true"
+        android:text="当前无推荐活动，请完善个人爱好！"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/choose"
+        android:divider="#FFFFFF"
+        android:dividerHeight="5dp"/>s
+
+</RelativeLayout>

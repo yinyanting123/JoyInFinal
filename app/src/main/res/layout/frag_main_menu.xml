@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.joyin.fragment.MainMenu">
+
+    <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/all_activity"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#FF0000"
+                android:textColor="#FFFFFF"
+                android:text="全部"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="#FCFCFC"
+                android:text="我的"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/choose"
+            android:layout_weight="1"
+            android:divider="#FFFFFF"
+            android:dividerHeight="5dp"/>
+</LinearLayout>

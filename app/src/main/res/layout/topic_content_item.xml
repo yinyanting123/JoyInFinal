@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/topic_item_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topic_content_item_username"
+        android:text="越女"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topic_content_item_userid"
+        android:layout_below="@id/topic_content_item_username"
+        android:text="15222222222"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/topic_content_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_content_item_userid"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:text="2015年12月21日"
+        android:textColor="#000000"/>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="65dp"
+        android:id="@+id/topic_content_item_gap1"
+        android:layout_toRightOf="@id/topic_content_item_time"
+        android:layout_marginLeft="5dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/topic_content_item_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/topic_content_item_gap1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:text="今夕何夕兮，搴舟中流，今夕何夕兮，得与王子同舟！蒙羞被好兮，不訾诟耻！心几烦而不绝兮，得知王子。山有木兮木有枝，心悦君兮君不知"
+        android:textColor="#000000"
+        android:maxLines="3"
+        android:layout_marginRight="5dp"
+        android:textSize="13sp"/>
+
+
+</RelativeLayout>

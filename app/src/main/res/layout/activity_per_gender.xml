@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_per_gender"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.joyin.Persetting.PersonSettingsGenderActivity">
+    <EditText
+        android:id="@+id/changed_gender"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="#F0F0F0"
+        android:hint="最多输入十个字符"
+        android:text="女"
+        android:textColor="#000000"
+        android:textCursorDrawable="@color/black_overlay"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#666666"
+        android:text="性别更改随意噢！" />
+
+    <Button
+        android:id="@+id/save_gender_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="16dp"
+        android:onClick="saveGenderChange"
+        android:text="保存"
+        android:textSize="15sp" />
+</LinearLayout>

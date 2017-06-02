@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    tools:context="com.example.android.joyin.Persetting.PersonSettingsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#F0F0F0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="38dp"
+                android:text="头像"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/person_setting_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="10dp"
+                android:onClick="changeImage"
+                android:scaleType="fitXY"
+                android:src="@drawable/img1" />
+
+            <!-- <com.example.android.joyin.Tool.CirclePhoto.CircleImageView
+                 android:id="@+id/person_setting_img"
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 android:layout_marginLeft="198dp"
+                 android:layout_marginTop="10dp"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/img1"/>-->
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#E0E0E0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="17dp"
+                android:text="昵称"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/person_setting_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:layout_alignParentRight="true"
+                android:onClick="changeNickname"
+                android:text="余温"
+                android:textColor="#6C6C6C"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#E0E0E0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="17dp"
+                android:text="手机号"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_alignParentRight="true"
+                android:text="13212104567"
+                android:textColor="#6C6C6C"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#E0E0E0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="17dp"
+                android:text="性别"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/person_setting_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_alignParentRight="true"
+                android:onClick="changeGender"
+                android:text="女"
+                android:textColor="#6C6C6C"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#E0E0E0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="4dp"
+                android:text="我的地址"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/person_setting_address"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:onClick="changeAddress"
+                android:text="天津市津南区海河教育园区同砚路38号南开大学理科组团"
+                android:textColor="#6C6C6C"
+                android:textSize="15sp"
+                android:maxLines="2"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#E0E0E0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="4dp"
+                android:text="个性签名"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/person_setting_signature"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:onClick="changeSignature"
+                android:textSize="15sp"
+                android:text="庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣~"
+                android:textColor="#6C6C6C"
+                android:maxLines="4"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="#E0E0E0" />
+
+    </LinearLayout>
+</LinearLayout>

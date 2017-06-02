@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_topic_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.joyin.Topic.TopicContent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#EE1D24">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="话题精华"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/topic_content_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#E0E0E0"/>
+
+    <ImageView
+        android:id="@+id/topic_content_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/logo"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#E0E0E0"/>
+
+    <Button
+        android:id="@+id/add_message"
+        android:text="添加评论"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="270dp"/>
+
+    <ListView
+        android:id="@+id/topic_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="3dp"></ListView>
+
+</LinearLayout>

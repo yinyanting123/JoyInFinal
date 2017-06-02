@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/img1"
+    android:orientation="vertical"
+    android:layout_height="100dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/recommend_activity_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img1"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:orientation="horizontal">
+                <com.example.android.joyin.Tool.SpecialTextView
+                    android:id="@+id/recommend_activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="64dp"
+                    android:text="一起登山，如何"
+                    android:textColor="#000000"
+                    android:textSize="32sp" />
+
+                <ImageView
+                    android:id="@+id/recommend_activity_person_image"
+                    android:src="@drawable/person"
+                    android:scaleType="fitXY"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="2dp"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1">
+
+                <com.example.android.joyin.Tool.SpecialTextView
+                    android:id="@+id/recommend_activity_requirement_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8:11"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.example.android.joyin.Tool.SpecialTextView
+                    android:id="@+id/recommend_activity_requirement_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/recommend_activity_requirement_time"
+                    android:text="sum:10人"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <com.example.android.joyin.Tool.SpecialTextView
+                    android:id="@+id/recommend_activity_requirement_need"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/recommend_activity_requirement_sum"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="need:5人"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.example.android.joyin.Tool.SpecialTextView
+                    android:id="@+id/recommend_activity_requirement_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/recommend_activity_requirement_need"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="南开西区球场见"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"></LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

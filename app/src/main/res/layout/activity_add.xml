@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.joyin.Activity.AddActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#EE1D24">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="发布活动"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/appointment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/activity_add_gap1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/relativeLayout2"
+        android:background="#E0E0E0" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_add_gap1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="26dp"
+        android:text="活动名称："
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ActivityName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_add_gap1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/txtName"
+        android:hint="请输入活动名称"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="活动类别："
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/Classify"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ActivityName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/textView2"
+        android:entries="@array/Classify"
+        android:textColor="#000000">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="45dp"
+        android:text="活动时间："
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_StartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Classify"
+        android:layout_toRightOf="@id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="选择日期"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_StartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_StartDate"
+        android:layout_below="@id/Classify"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="选择时间"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="15dp"
+        android:text="活动地点："
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/StartAddr"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_StartDate"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:hint="请输入活动地点"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="42dp"
+        android:text="活动人数："
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ActPerNum"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/test2"
+        android:layout_below="@+id/StartAddr"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="请输入活动人数"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:text="详情描述:"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Detail"
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <ImageView
+        android:id="@+id/Gallery"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/Detail"
+        android:layout_below="@id/textView5"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logo" />
+
+
+    <Button
+        android:id="@+id/Pub"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="发布"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>
